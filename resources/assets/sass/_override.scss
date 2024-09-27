@@ -1,0 +1,48 @@
+// globally override for bootstrap style
+
+input {
+    &:focus {
+        outline: none;
+    }
+}
+
+.h5, h5 {
+    font-size: 1.09375rem;
+}
+
+.h6, h6 {
+    font-size: .875rem;
+}
+
+// removed bootstrap default border of modal
+.modal-content {
+    border: 0;
+}
+
+// core ui profile dropdown
+.app-header .navbar-nav .dropdown-menu-right {
+    right: 34px;
+}
+
+.nav-link {
+    display: flex !important;
+    align-items: center !important;
+}
+.chat__tab-nav .nav-item .nav-link {
+    color: #73818f !important;
+}
+.sidebar-nav {
+    .icon-speech.nav-icon {
+        position: relative;
+        top: 1px;
+    }
+}
+
+.sidebar-minimized {
+
+    @media (min-width: 992px) {
+        .nav .nav-link {
+            padding: 0.75rem 1rem;
+        }
+    }
+}

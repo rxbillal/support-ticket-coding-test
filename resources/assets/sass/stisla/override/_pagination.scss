@@ -1,0 +1,38 @@
+.page-item {
+    .page-link {
+        color: color(white);
+        border-radius: 3px;
+        margin: 0 3px;
+    }
+
+    &.active .page-link {
+        background-color: color(primary);
+        border-color: color(primary);
+        opacity: 1;
+    }
+
+    &.disabled .page-link {
+        border-color: transparent;
+        background-color: color(primary);
+        color: color(white);
+        opacity: .4;
+    }
+}
+
+.page-link {
+    border-color: transparent;
+    background-color: color(primary);
+    font-weight: 600;
+    opacity: .8;
+
+    &:hover {
+        background-color: color(primary);
+        color: #fff;
+        border-color: transparent;
+        opacity: 1;
+    }
+
+    &:focus {
+        box-shadow: none;
+    }
+}

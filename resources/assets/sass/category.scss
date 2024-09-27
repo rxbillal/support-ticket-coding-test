@@ -1,0 +1,122 @@
+@import "stisla/variable";
+.customer-dashboard-category-search {
+    height: 35px !important;
+    margin-right: 15px !important;
+}
+
+.hover-effect-category {
+    transition-duration: 1s;
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    height: 90%;
+    border-radius: 15px;
+}
+
+.hover-effect-category:hover {
+    transform: translateY(-5px);
+    opacity: 1.0;
+}
+
+.hover-effect-category:hover a.category-edit {
+    visibility: visible;
+}
+
+.hover-effect-category:hover a.category-delete {
+    visibility: visible;
+}
+
+.category-listing-details {
+    display: flex;
+    flex-wrap: wrap;
+    line-break: anywhere;
+    align-items: flex-start;
+    padding: 25px 25px 20px 25px;
+    box-shadow: none;
+    flex: auto;
+}
+
+.category-listing-description {
+    padding-top: 0;
+    flex: 1;
+}
+
+.category-data {
+    line-height: 30px !important;
+    margin-left: 10px;
+}
+
+h3.category-listing-title {
+    font-size: 1rem;
+    margin-bottom: 3px;
+    font-weight: 200 !important;
+}
+
+h3.category-listing-title a {
+    color: color(primary);
+}
+h3.category-listing-title a:hover {
+    color: color(primary) !important;
+}
+
+.category-action-btn .category-delete {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    color: red !important;
+    background-color: white !important;
+    border: none;
+    box-shadow: 0 2px 6px white !important;
+    font-size: 15px;
+}
+
+.category-delete {
+    visibility: hidden;
+}
+
+.category-action-btn .category-edit {
+    position: absolute;
+    right: 35px;
+    bottom: 10px;
+    color: #ffa426 !important;
+    background-color: white !important;
+    border: none;
+    box-shadow: 0 2px 6px white;
+    font-size: 15px;
+}
+
+.category-edit {
+    visibility: hidden;
+}
+
+.category-card-hover-border:hover {
+}
+
+.category-badge {
+    font-size: 10px !important;
+    padding: 5px 7px !important;
+    border-radius: 5px !important;
+}
+
+.ribbon.float-right.category-ribbon {
+    margin-right: 10px;
+    border-radius: 3px;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+}
+
+.ribbon.category-ribbon:before {
+    border-left-width: 0px !important;
+}
+
+.hover-effect-category:hover {
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+    opacity: 1.0;
+}
+/** Responsive **/
+@media (max-width: 576px) {
+    .category-listing-details {
+        padding: 25px 10px 20px 10px;
+    }
+}

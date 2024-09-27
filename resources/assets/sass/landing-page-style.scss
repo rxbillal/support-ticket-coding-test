@@ -1,0 +1,75 @@
+@import "web_color";
+
+.header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+    .header-title {
+        letter-spacing: 1pt;
+        font-weight: 800;
+        font-size: 60px;
+        line-height: 1;
+        padding-bottom: 25px;
+        color: $primaryColor;
+
+        @media (max-width: 1024px) {
+            font-size: 45px;
+        }
+    }
+
+    .header-subtitle {
+        font-family: "Poppins", arial, serif;
+        letter-spacing: 1pt;
+        font-size: 27px;
+        font-weight: 400;
+        line-height: 1.5;
+        padding-bottom: 10px;
+    }
+
+    .header-img-section img {
+        width: 100%;
+    }
+
+    .search-container {
+        position: relative;
+
+        input {
+            font-family: "Montserrat", serif;
+            font-size: 19px !important;
+            height: 50px !important;
+            background: #ffffff;
+            padding: 5px;
+            border: 1px solid #9f9f9f;
+            margin-top: 1rem;
+            width: 100%;
+        }
+
+        button {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            height: 40px;
+        }
+
+        @media (max-width: 1024px) {
+            text-align: center;
+            button {
+                position: static;
+                margin-top: 20px;
+            }
+
+        }
+    }
+}
+
+.public-ticket {
+    &-button {
+        padding-bottom: 2.5rem !important;
+    }
+
+    &-reset .resetFilter {
+        height: 40px !important;
+    }
+}

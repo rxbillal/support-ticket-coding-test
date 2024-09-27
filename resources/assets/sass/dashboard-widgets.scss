@@ -1,0 +1,44 @@
+.total-agents-bg {
+    background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+    background-image: -webkit-linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+}
+
+.verified-category-bg {
+    background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(230, 115, 1, 0.68) 21.4%, #ff4e4e 80.3%);
+    background-image: -webkit-radial-gradient(circle farthest-corner at 10% 20%, rgba(230, 115, 1, 0.68) 21.4%, #ff4e4e 80.3%);
+}
+
+.open-ticket-bg {
+    background: linear-gradient(to right, #0ac282, #0df3a3);
+    background-image: -webkit-linear-gradient(to right, #0ac282, #0df3a3);
+}
+
+.closed-ticket-bg {
+    background-image: radial-gradient(circle farthest-corner at 10% 20%, #fe5d70, #fe909d);
+    background-image: -webkit-radial-gradient(circle farthest-corner at 10% 20%, #fe5d70, #fe909d);
+}
+
+.time_range {
+    background: #FFFFFF;
+    cursor: pointer;
+    padding: 6px 10px;
+    border: 1px solid #ccc;
+    //width: 100%;
+    border-radius: 5px;
+    max-height: 42px;
+}
+/** Responsive **/
+@media screen and (max-width: 576px) {
+    .selectgroup-button {
+        font-size: 11px;
+    }
+}
+//dashboard 
+.custom-dash-header {
+    padding: 15px 8px !important;
+}
+    .custom-seclect-pills {
+        align-items: flex-start !important;
+        flex-wrap: nowrap;
+        white-space: nowrap !important;
+    }

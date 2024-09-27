@@ -1,0 +1,241 @@
+@import "stisla/style";
+@import "stisla/components";
+
+body {
+    background: #eef0f8;
+    font-family: Poppins, Helvetica, sans-serif;
+}
+
+a:hover {
+    color: color(primary);
+}
+
+.card {
+    box-shadow: 0 0 30px 0 rgba(82, 63, 105, .05);
+    border: 0;
+    border-radius: .42rem;
+    //background-color: #fff;
+}
+
+.section .section-header {
+    box-shadow: 0 0 30px 0 rgba(82, 63, 105, .05);
+    border: 0;
+    border-radius: .42rem !important;
+}
+
+button.swal2-confirm.btn.btn-primary {
+    background-color: #00b0b0 !important;
+}
+
+lectgroup.swal2-cancel.btn.btn-secondary, .swal2-styled.swal2-cancel {
+    color: #34395e !important;
+}
+
+.swal2-styled.swal2-confirm, .swal2-styled.swal2-cancel {
+    font-weight: 600;
+    font-size: 17px !important;
+}
+
+.swal2-styled {
+    &:focus {
+        box-shadow: none !important;
+    }
+}
+
+.category-select {
+    width: 200px;
+}
+
+.status-select {
+    width: 175px;
+}
+
+.public-ticket-select-w {
+    width: 150px;
+}
+
+.no-record-chart {
+    min-height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.note-toolbar .note-btn:hover {
+    background-color: color(primary) !important;
+    color: #FFFFFF;
+}
+
+/** Responsive **/
+@media (max-width: 576px) {
+    .sm-hide {
+        display: none;
+    }
+    .sm-show {
+        display: block;
+    }
+    .sm-flex-column {
+        -ms-flex-direction: column !important;
+        flex-direction: column !important;
+    }
+    .main-wrapper-1 .section .section-header.sm-section-p {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+.color-hover-black:hover, .color-hover-black:focus, .color-hover-black:active, {
+    color: #0c0b0bf2 !important;
+}
+
+#colorError,#editColorError {
+    position: absolute;
+    top: 50%;
+    left: 60px;
+    font-size: 0.9rem;
+}
+//user-header
+.custom-select-head_user{
+    @media (max-width: 430px) {
+        margin-right: 0 !important;
+        display: flex!important;
+        width: 100%;
+    }
+}
+//customer section
+.custom-customer-input{
+
+    .custom-input{
+        @media (max-width: 853px){
+            margin-right: 0 !important;
+        }
+    }
+}
+//ticket-create new 
+.custom-ticket-new{
+    white-space: nowrap;
+}
+//ticket customer name
+.custom-ticket-content{
+    width: calc(100% - 30px);
+}
+
+.custom-editor {
+    .note-editor .note-toolbar, .note-popover .popover-content {
+        white-space: nowrap;
+    }
+
+    .dropdown-toggle::after {
+        content: none!important;
+    }
+
+    .note-dropdown-menu {
+        @media (max-width: 520px) {
+            left: -85px !important;
+        }
+    }
+}
+
+.v-align-top {
+    vertical-align: top;
+    margin-top: 8px;
+}
+
+.justify-content-center-xs {
+    @media (max-width: 420px) {
+        justify-content: center !important;
+    }
+}
+
+.custom-type {
+    @media (max-width: 400px) {
+        flex-direction: column;
+    }
+
+    .reset-btn {
+        @media (max-width: 400px) {
+            margin-top: 10px !important;
+        }
+    }
+}
+
+.mobile-width-100 {
+
+    .responsive-100 {
+        @media (max-width: 430px) {
+            width: 100% !important;
+            margin-right: 0 !important;
+        }
+
+        .select2-container {
+            @media (max-width: 430px) {
+                width: 100% !important;
+            }
+        }
+    }
+}
+
+.width-mobile-100 {
+    @media (max-width: 430px) {
+        width: 100%;
+    }
+    
+    .selectgroup {
+        @media (max-width: 430px) {
+            width: 100%;
+        }
+    }
+    
+    .custom-input {
+        @media (max-width: 430px) {
+           margin-right: 0 !important;
+        }
+    }
+}
+
+.justify-content-mobile-center {
+    @media (max-width: 430px) {
+        justify-content: center !important;
+    }
+}
+
+.px-mobile-3 {
+    @media (max-width: 430px) {
+        padding: 0 15px;
+    }
+}
+
+.lh-unset {
+    line-height: unset!important;
+}
+
+.main-sidebar .sidebar-brand.custom-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 22px !important
+}
+
+.paginatorRow .pagination{
+    @media screen and (max-width: 767px){
+        flex-wrap: wrap;
+    }
+    
+    .page-item{
+        @media screen and (max-width: 767px){
+            margin: 3px 0;
+        }
+        
+        &:first-child .page-link{
+            margin-left: 3px;
+        }
+
+        &:last-child .page-link{
+            margin-right: 3px;
+        }
+    }
+}
+
+.chat-conversation__bubble {
+    word-break: break-all;
+}

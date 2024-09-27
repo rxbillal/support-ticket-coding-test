@@ -1,0 +1,55 @@
+$primaryColor: #00b0b0 !default;
+$colors: (
+        primary: $primaryColor,
+        secondary: #cdd3d8,
+    //success: $primaryColor,
+        success: #00b064,
+        info: #3abaf4,
+        warning: #ffc107,
+        danger: #fc544b,
+        light: #e3eaef,
+        grey: #868e96,
+        whitesmoke: #f7f9f9,
+        dark: #34395e,
+        muted: #98a6ad,
+        body: #f4f6f9,
+        font: #6c757d,
+        fontdark: #34395e,
+        white: #ffffff,
+    // Form Control
+    formcontrol_normal_background: #fdfdff,
+    formcontrol_normal_border: #e4e6fc,
+    formcontrol_focus_background: #fefeff,
+    formcontrol_focus_border: $primaryColor,
+    // Utilities
+    section_title_line: $primaryColor,
+);
+$font_family: 'Nunito', 'Segoe UI', arial;
+$font_weight: 400;
+$font_size: 14px;
+$sidebar-bg-color: $primaryColor;
+$sidebar-shadow: 0 0 10px 1px color_lighten(primary, 5%);
+$sidebar-hover-bg-color: color_lighten(light, 31%);
+$grid-breakpoints: (
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px
+) !default;
+
+@function color($key) {
+    @return map-get($colors, $key);
+}
+
+@function color_lighten($key, $amount) {
+    @return lighten(map-get($colors, $key), $amount);
+}
+
+@function color_darken($key, $amount) {
+    @return darken(map-get($colors, $key), $amount);
+}
+
+@function to_opacity($color, $opacity) {
+    @return rgba(color($color), $opacity);
+}

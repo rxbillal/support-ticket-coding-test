@@ -1,0 +1,50 @@
+@charset "UTF-8";
+@import "web_color";
+@import "stisla/style";
+@import "stisla/override/_web_navbar";
+@import "responsive";
+
+
+.navbar .nav-link {
+    color: $primaryColor !important;
+}
+
+.btn-primary, .btn-primary.disabled {
+    box-shadow: 0 2px 6px #6b719bc2;
+}
+
+/* 4.5 Animation */
+.pulsate {
+    -webkit-animation: pulsate 1s ease-out;
+    animation: pulsate 1s ease-out;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    opacity: 1;
+}
+
+@-webkit-keyframes pulsate {
+    0% {
+        -webkit-transform: scale(0.1, 0.1);
+        opacity: 0.0;
+    }
+    50% {
+        opacity: 1.0;
+    }
+    100% {
+        -webkit-transform: scale(1.2, 1.2);
+        opacity: 0.0;
+    }
+}
+
+.region-code {
+    .region-code-ul {
+        &-div {
+            li > a:hover, li > a:focus {
+                background-color: #6b719b !important;
+            }
+        }
+        .selected {
+            background-color: #6b719b !important;
+        }
+    }
+}

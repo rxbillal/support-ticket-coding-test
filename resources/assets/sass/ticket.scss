@@ -1,0 +1,223 @@
+@import "stisla/variable";
+
+html {
+    scroll-padding-top: 120px;
+}
+
+.ticket-type-info {
+    font-size: 15px;
+    padding: 5px 0 0 8px;
+}
+
+.private-ticket {
+    color: #721c24;
+    background-color: #f8d7da;
+    position: relative;
+    padding: .75rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+}
+
+.public-ticket {
+    color: #155724;
+    background-color: #d4edda;
+    position: relative;
+    padding: .75rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+}
+
+.ticket-reply {
+    padding: 2rem !important;
+    margin-bottom: 0 !important;
+    background-color: #FFFFFF !important;
+    border-bottom: 1px solid #b6babf;
+}
+
+.reply-user-name {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.reply-description {
+    color: #495057;
+    display: block;
+}
+
+.ticket-action-btn {
+    display: none;
+    transition: 0.3s;
+    transform: scale(0.3);
+    opacity: 0;
+    font-size: 16px;
+}
+
+.ticket-reply:hover .ticket-action-btn {
+    display: block;
+    animation: show-btn 0.5s forwards;
+}
+
+@keyframes show-btn {
+    0% {
+        transform: scale(0.3);
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.reply-user-img {
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+}
+
+.ticket-badge {
+    padding: 3px 8px !important;
+    font-size: 12px !important;
+}
+
+.ticket-attachment {
+    margin-bottom: 10px;
+    margin-right: 12px;
+    height: 70px;
+    width: 100px;
+    padding: .25rem;
+    background-color: #fff;
+    border-radius: .25rem;
+    object-fit: contain;
+
+    &-dropzone {
+        max-height: 386px;
+        overflow: auto;
+    }
+}
+
+.gallery-item {
+    &.ticket-attachment {
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ticket-attachment__icon {
+        text-align: center;
+        background: #47525d;
+        border-radius: 6px;
+        width: 50px;
+        height: 22px;
+    }
+}
+
+.attachment {
+    &__create {
+        max-height: 20vh;
+        overflow-y: auto;
+    }
+
+    &__section {
+        max-height: 39vh;
+        overflow-y: auto;
+    }
+}
+
+.dz-filename {
+    width: 91px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.ticket-reply {
+    &-time {
+        font-size: 0.9em;
+    }
+
+    &-scroll {
+        max-height: 550px;
+        overflow-y: auto;
+    }
+}
+
+.dropzone .dz-preview .dz-image img {
+    object-fit: cover;
+}
+
+.attachment-icon:hover {
+    color: #6b719b !important;
+}
+
+.img-ticket-user {
+    height: 80px;
+    width: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.custom-ticket-title {
+    color: #6c757d;
+    font-size: 1rem;
+    margin: 0.30rem 0;
+}
+
+.btn-delete-ticket {
+    position: absolute;
+    right: 2px;
+    top: 50px;
+}
+
+.ticket-add-replay {
+    background-color: #EEEEEE !important;
+
+    .note-editor {
+        background: white;
+    }
+}
+.ticket-show-label{
+    width: 80px;
+    display: inline-block;
+    font-size: 0.8rem;
+
+}
+.ticket-show-value {
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+/** Responsive **/
+@media screen and (max-width: 1024px) {
+    .ticket-show-label {
+        width: 100%;
+    }
+}
+
+.ticket-filter-spacer {
+    margin-bottom: 0.5rem;
+}
+
+/** Responsive **/
+@media (max-width: 576px) {
+    .ticket-filter-spacer {
+        margin-bottom: .50em !important;
+        width: 100%;
+    }
+    .ticket-type-filter {
+        width: 100%;
+        justify-content: space-between;
+        padding-left: .5rem;
+        padding-right: .5rem;
+    }
+}
+//ticket details post-reply btn
+.custom-ticket-btn{
+    @media (max-width: 515px)  {
+        width: 100%;
+        margin-top: 10px !important;
+    }
+}
+
+.j-error-padding{
+    margin-bottom: 29px;
+}
